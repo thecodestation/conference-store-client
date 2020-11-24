@@ -1,8 +1,12 @@
 language: node_js
-
 node_js:
   - 15
 
 script:
     - npm test
     - npm run build
+deploy:
+  provider: heroku
+  app: conference-store-client
+  api_key:
+    secure: 1LHZClm+518gBW4bHV6TXkdtTd0+9sXi5Tg71A5kW2+F21wRwuMhpT0Yktpm/beugCIZzzDhc+n6XX+CY6EMtBjsYm8OT25y1SNY+AQTXZ6uBqGP6YSn1qI25tjAbf7gxK8LnM6KRVuEpP/Z5WqLNe82a6D5VfAyvnwi9csCP+W2ZBpIMSaCbUGyCiQEzZff9Ch6FOCZZqC8WD1qBOWSKArcw3j1YH9trI3rfArMvo0fdUB8rACvYQz8ev5vRtcsVj88mmluwpOEgateLDlfaykdeHDPCmNbh/FH78u1UDS4GeqVyKEL5owZVnuwIkZQo410hJ6USBCFcSjtKCqJSk4/7Qn8DRHzjcjclVcl0/J3KO+WW8mjsshpffqlJ5lDxgFcb7duT8Gg/ieaDe5Wllt5p/oz0iLuQFJzJwofYBzkXdzWChdjEDfDqnxLHlQ+Ge3voFB7FrKhmi4uK7wxqACPLUfSzOUDjzzy4rXp/B7W8SXl2ptAnbwXMuhD20Uz7LKrKAgFw4/VMJl7TNNlE9DmSaRJ6A5Ut22Q/1XmQHDQ3YZbKio9UvQJa3i2FGUVJYBQaMvwtVc1GL6eXz7LT+MZdUjUVcTmfkN6WpCFghJ5tm6s3UsGpEWKDmIct39xiWWgUrumRdE8Pi8cz35dT7SDrglfReX63Xp/rR+lEBE=
