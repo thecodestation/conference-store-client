@@ -7,6 +7,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "bootstrap": "^4.5.3",
+    "http-proxy-middleware": "^0.19.1",
     "react": "^17.0.1",
     "react-cookie": "^4.0.3",
     "react-dom": "^17.0.1",
@@ -21,7 +22,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "https://conference-store-server.herokuapp.com/",
   "eslintConfig": {
     "extends": [
       "react-app",
